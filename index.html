@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>rgb-to-hex</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="index.js"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 20px;
+        }
+        .centered {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .box {
+            width: auto;
+            padding-top: 100%;
+            border-style: solid;
+            border-color: #000
+        }
+        input, button {
+            font-size: 20px;
+        }
+        div {
+            padding: 10px;
+            text-align: center;
+        }
+        a {
+            color: #000;
+        }
+        a:visited {color:#000;}
+        a:hover {text-decoration: #000;}
+    </style>
+</head>
+<body>
+    <div class="centered">
+        <h2><a href="https://github.com/ajzbc/rgb-to-hex" target="_blank">rgb-to-hex</a></h2>
+        <input type="number" id="r" placeholder="red"><br>
+        <input type="number" id="g" placeholder="green"><br>
+        <input type="number" id="b" placeholder="blue"><br><br>
+        <button onclick="convert()">Convert</button>
+        <div id="new">
+            <!--stuff goes here-->
+        </div>
+    </div>
+</body>
+</html>
